@@ -1,7 +1,16 @@
 
 from time import sleep
 
-#deffine the menu so I can print the menu with ease and not have to write the whole thing again and again. 
+#deffine the menu so I can print the menu with ease and not have to write the whole thing again and again.
+
+#creating a price list
+price = [
+  "3.00"
+  "3.00"
+  "3.50"
+  "3.00"
+  "4.00"
+]
 
 def menu (): 
   print("============================")
