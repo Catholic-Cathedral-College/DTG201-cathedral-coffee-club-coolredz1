@@ -13,20 +13,30 @@ price = [
 ]
 
 def menu (): 
-  print("============================")
-  print("|Flat White           $3.00|")
-  print("|Cappuccino           $3.00|")
-  print("|Latte                $3.50|")
-  print("|Decaf                $3.00|")  
-  print("|Hot Chocolatte       $4.00|")
-  print("============================")
+  print("===============================")
+  print("|(1)Flat White           $3.00|")
+  print("|(2)Cappuccino           $3.00|")
+  print("|(3)Latte                $3.50|")
+  print("|(4)Decaf                $3.00|")  
+  print("|(5)Hot Chocolatte       $4.00|")
+  print("===============================")
   
 #print the title here, then print the menu after it. 
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("             BUY MY BROWN LIQUED                ")
+print("               BUY MY BROWN DRINK               ")
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 menu ()
 
 #make an input about what type of coffee they would like 
-input(print("What type of drink would you like to buy"))
 
+order = input(print("What type of drink would you like to buy? Please enter in the number for your choice of drink.?"))
+while order !=0:
+  if order == "1":
+    print("Flat white has been added to your order")
+    order = 0 
+  elif order == "2":
+    print("Cappucino has been added to your order")
+    order = 0
+else:
+  print("stop")
+ 
