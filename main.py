@@ -36,6 +36,7 @@ while order != 0:
     print("Flat white has been added to your order")
   elif order == "2":
     print("Cappucino has been added to your order")
+    order = 0
   elif order == "3":
     print("Latte has been added to your order")
   elif order == "4":
@@ -43,10 +44,23 @@ while order != 0:
   elif order == "5":
     print("Hot chocolatte has been added to your order")
   elif order == "6":
-    print("order is now ")
+    print("order is now complete ")
   else:
     print("sorry but we do not have that in our menu ")
 
 order = input(print("What type of drink would you like to buy? Please enter in the number for your choice of drink?"))
-#Receat process and asking how many coffee they would like to have 
+
+#asking the name of the customer for the receipt
+name = input(print("What would be the name for the order?"))
+name = input(print("Is your name", name,"? Please press 1 for YES and 2 for NO"))
+while name !=0:
+  if name == "1":
+    print("Thank you for conferming")
+  elif name == "2":
+    print("Sorry would you mind typing it again please")
+  else:
+    print("sorry invalid choice, please press 1 for YES and 2 for NO")
+    
+
+#Receipt process and asking how many coffee they would like to have 
 
