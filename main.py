@@ -23,7 +23,15 @@ def menu ():
   print("===============================")
 
 
-  
+def sugar():
+  sugar = int(input("would you like sugar with you coffee? "))
+  if sugar == "1":
+    print("sugar will be added to your coffee ")
+  elif sugar == "2":
+    print("sugar will not be added to your drink")
+  else:
+    print("please press [1] for Yes and [2] for No")
+
 #print the title here, then print the menu after it. 
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("               BUY MY BROWN DRINK               ")
@@ -44,39 +52,44 @@ while order != 0:
     quantity = int(input("How many Flat White(s) would you like to order?"))
     print()
     print(quantity,"Flat White(s) have been added to your order")
-    order = 0
+    sugar()
+    order = input("What type of drink would you like to buy? Please enter in the number for your choice of drink? ")
   elif order == "2":
     print("Cappucino has been added to your order")
     quantity = int(input("How many Cappucino would you like to order? "))
     print()
     print(quantity,"Cappucino(s) has been added to your order.")
-    order = 0
+    sugar()
+    order = input("What type of drink would you like to buy? Please enter in the number for your choice of drink? ")   
   elif order == "3":
     print("Latte has been added to your order")
     quantity = int(input("how many Latte(s) would you like to order?  "))
     print()
-    print(quantity,"Latte(s) has been added to your order      ")
-    order = 0
+    print(quantity,"Latte(s) has been added to your order  ")
+    sugar()
+    order = input("What type of drink would you like to buy? Please enter in the number for your choice of drink? ")    
   elif order == "4":
     print("Decaf has been added to your order")
     quantity = int(input("How many Decaf(s) woukd you like to buy? "))
     print()
-    print(quantity,"has Decaf(s) been added to your order.")
-    order = 0
+    print(quantity,"Decaf(s) has been added to your order.")
+    sugar()
+    order = input("What type of drink would you like to buy? Please enter in the number for your choice of drink? ")
   elif order == "5":
     print("Hot chocolatte has been added to your order")
     quantity = int(input("How many Hot chocolate(s) would you like to be buy? "))
     print()
-    print(quantity,"has hot chocolatte(s) been added to your order. ")
-    order = 0 
+    print(quantity,"Hot chocolatte(s) has been added to your order")
+    sugar()
+    order = input("What type of drink would you like to buy? Please enter in the number for your choice of drink? ")
   elif order == "0":
-    print("order is now complete ")
+    print("order is now complete ")   
     order = 0
   else:
     print("Please pick one on of the options in our menu")
     order = input("What type of drink would you like to buy? Please enter in the number for your choice of drink? ")
 
-order = input("What type of drink would you like to buy? Please enter in the number for your choice of drink? ")
+    
 #asking the name of the customer for the receipt
 
 name = input("What would be the name for the order? ")
