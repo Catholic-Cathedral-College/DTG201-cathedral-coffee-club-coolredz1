@@ -25,12 +25,11 @@ def menu ():
 
 def sugar():
   sugar = int(input("would you like sugar with you coffee? "))
-  if sugar == "1":
-    print("sugar will be added to your coffee ")
-  elif sugar == "2":
-    print("sugar will not be added to your drink")
-  else:
-    print("please press [1] for Yes and [2] for No")
+  if sugar.lower().format() == "yes":
+    print("sugar is now being added to your drink")
+  elif sugar.lower().format() == "no":
+    print("No sugar will not be added to your drink")
+    
 
 #print the title here, then print the menu after it. 
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
@@ -42,6 +41,10 @@ print()
 
 #make an input about what type of coffee they would like 
 order = input("What type of drink would you like to buy? Please enter in the number for your choice of drink? ")
+
+def total():
+  print()
+
 print()
 
 
@@ -52,6 +55,7 @@ while order != 0:
     quantity = int(input("How many Flat White(s) would you like to order?"))
     print()
     print(quantity,"Flat White(s) have been added to your order")
+    print()
     sugar()
     order = input("What type of drink would you like to buy? Please enter in the number for your choice of drink? ")
   elif order == "2":
@@ -59,6 +63,7 @@ while order != 0:
     quantity = int(input("How many Cappucino would you like to order? "))
     print()
     print(quantity,"Cappucino(s) has been added to your order.")
+    print()
     sugar()
     order = input("What type of drink would you like to buy? Please enter in the number for your choice of drink? ")   
   elif order == "3":
@@ -73,6 +78,7 @@ while order != 0:
     quantity = int(input("How many Decaf(s) woukd you like to buy? "))
     print()
     print(quantity,"Decaf(s) has been added to your order.")
+    print()
     sugar()
     order = input("What type of drink would you like to buy? Please enter in the number for your choice of drink? ")
   elif order == "5":
@@ -80,10 +86,12 @@ while order != 0:
     quantity = int(input("How many Hot chocolate(s) would you like to be buy? "))
     print()
     print(quantity,"Hot chocolatte(s) has been added to your order")
+    print()
     sugar()
     order = input("What type of drink would you like to buy? Please enter in the number for your choice of drink? ")
   elif order == "0":
-    print("order is now complete ")   
+    print("order is now complete ")
+    print()
     order = 0
   else:
     print("Please pick one on of the options in our menu")
@@ -94,6 +102,7 @@ while order != 0:
 
 name = input("What would be the name for the order? ")
 name = input(print("Is your name", name,"? Please press 1 for YES and 2 for NO"))
+print()
 while name !=0:
   if name == "0":
     print("Thank you for conferming")
@@ -101,13 +110,17 @@ while name !=0:
   elif name == "2":
     print("Sorry would you mind typing it again please")
     name = input("What would the name be for the order? ")
+    print()
     name = input("Is your name,", name,"? please press 1 for YES and 2 for NO.")
     name = 0
   else:
     print("sorry invalid choice, please press 1 for YES and 2 for NO")
+    print()
     name = input("What would be the name for the order? ")
     name = input("Is your name", name,"? Please press 1 for YES and 2 for NO")
     name = 0 
 
+print()
 
-#Receipt process and asking how many coffee they would like to have this will aslo show the total for each of the 
+
+#Receipt process 
