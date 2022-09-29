@@ -19,16 +19,16 @@ def menu ():
   print("|(3)Latte                $3.50|")
   print("|(4)Decaf                $3.00|")  
   print("|(5)Hot Chocolatte       $4.00|")
-  print("|(6)Would like to finish order|")
+  print("|(0)Would like to finish order|")
   print("===============================")
 
 
 def sugar():
-  sugar = int(input("would you like sugar with you coffee? "))
-  if sugar.lower().format() == "yes":
-    print("sugar is now being added to your drink")
-  elif sugar.lower().format() == "no":
-    print("No sugar will not be added to your drink")
+    sugar = input("would you like sugar with you coffee? ")
+    if sugar.lower().format() == "yes":
+      print("sugar is now being added to your drink")
+    elif sugar.lower().format() == "no":
+      print("No sugar will not be added to your drink")
     
 
 #print the title here, then print the menu after it. 
@@ -42,10 +42,6 @@ print()
 #make an input about what type of coffee they would like 
 order = input("What type of drink would you like to buy? Please enter in the number for your choice of drink? ")
 
-def total():
-  print()
-
-print()
 
 
 
@@ -92,7 +88,7 @@ while order != 0:
   elif order == "0":
     print("order is now complete ")
     print()
-    order = 0
+    order = 0  
   else:
     print("Please pick one on of the options in our menu")
     order = input("What type of drink would you like to buy? Please enter in the number for your choice of drink? ")
